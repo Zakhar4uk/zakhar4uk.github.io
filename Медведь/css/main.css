@@ -1,0 +1,181 @@
+.granici{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.circle{
+  width: 120px;
+  height: 120px;
+  background: #F7E323;
+  border-radius: 50%;
+  border: 10px solid #94967B;
+  position: relative;
+  background: radial-gradient(30.85% 30.85% at 50% 69.15%, rgba(247, 227, 35, 0) 37.48%, #F7E323 100%);
+}
+
+.oval_glaz_left{
+  z-index: 1;
+  width: 30px;
+  height: 50px;
+  border-radius: 50%;
+  background: #585A58;
+  position: absolute;
+  top: 20px;
+  left: 21px;
+  transform: rotate(30deg);
+}
+
+.oval_glaz_right{
+  z-index: 2;
+  width: 30px;
+  height: 50px;
+  border-radius: 50%;
+  background: #585A58;
+  position: absolute;
+  top: 20px;
+  left: 68px;
+  transform: rotate(-30deg);
+}
+
+.oval_noc{
+  z-index: 3;
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+  background: #292829;
+  position: absolute;
+  top: 70px;
+  left: 56px;
+  transform: rotate(90deg);
+}
+
+.zrachok_left{
+  z-index: 4;
+  width: 20px; 
+  height: 20px; 
+  margin: -2px 0 2px 0;
+  border-radius: 50%;
+  box-shadow: 6px 0px 0px 0px #FFFBFF;
+  position: absolute;
+  top: 32px;
+  left: 60px;
+}
+
+.zrachok_right{
+  z-index: 4;
+  width: 20px; 
+  height: 20px; 
+  margin: -2px 0 2px 0;
+  border-radius: 50%;
+  box-shadow: -6px 0px 0px 0px #FFFBFF;
+  position: absolute;
+  top: 32px;
+  left: 40px;
+}
+
+.krug_ucho_left{
+  position: absolute;
+  z-index: 5;
+  transform: rotate(94deg);
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-left: 25px solid #94967b;
+  border-bottom: 25px solid #94967b;
+  border-radius: 50%;
+  top: -16px;
+  left: -3px;
+}
+
+.krug_ucho_right{
+  position: absolute;
+  z-index: 5;
+  transform: rotate(174deg);
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-left: 25px solid #94967b;
+  border-bottom: 25px solid #94967b;
+  border-radius: 50%;
+  top: -16px;
+  left: 76px;
+}
+
+.krug_babochka_left{
+  width: 20px;
+  height: 20px;
+  z-index: 6;
+  background: #F41310;
+  border-radius: 50%;
+  position: absolute;
+  top: 122px;
+  left: 25px;
+}
+
+.triangle_babochka_left{
+  position: absolute;
+  z-index: 6;
+  top: 122px;
+  left: 37px;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #F41310;
+  border-bottom: 10px solid transparent;
+}
+
+.krug_babochka_right{
+  width: 20px;
+  height: 20px;
+  z-index: 6;
+  background: #F41310;
+  border-radius: 50%;
+  position: absolute;
+  top: 122px;
+  left: 25px;
+}
+
+.triangle_babochka_right{
+  position: absolute;
+  z-index: 6;
+  top: 122px;
+  left: 57px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #F41310;
+  border-bottom: 10px solid transparent;
+}
+
+.krug_babochka_right{
+  width: 20px;
+  height: 20px;
+  z-index: 6;
+  background: #F41310;
+  border-radius: 50%;
+  position: absolute;
+  top: 122px;
+  left: 69px;
+}
+
+.usi_nadechda_right{
+  width: 10px;
+  height: 20px;
+  background: transparent;
+  box-shadow: -1px 3px 0 0 #292829;
+  position: absolute;
+  z-index: 7;
+  border-bottom-left-radius: 20px;
+  top: 77px;
+  left: 62px;
+}
+
+.usi_nadechda_left{
+  width: 10px;
+  height: 20px;
+  background: transparent;
+  box-shadow: 1px 3px 0 0 #292829;
+  position: absolute;
+  z-index: 7;
+  border-bottom-right-radius: 20px;
+  top: 77px;
+  left: 50px;
+}

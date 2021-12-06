@@ -1,0 +1,104 @@
+.Block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid green;
+	height: 700px;
+	background: #efefef;
+}
+
+.text1{
+	position: absolute;
+	top: -30px;
+	left: 10px;
+    font-size: 25px;
+    color: black;
+    opacity: 0%;
+}
+
+.text2{
+	position: absolute;
+    top: -30px;
+    left: 10px;
+    font-size: 25px;
+    color: black;
+    opacity: 0%;
+}
+
+.pistolet{
+	position: absolute;
+	top:0px;
+	left:0px;
+	border: none;
+}
+
+.block-animation{
+   	 border: none;
+		position: absolute;	
+		transform: rotate(45deg);	
+}
+
+.block-animation:hover{
+  	transform: rotate(0deg);
+	transition: 1s;
+}
+
+.block-animation:hover .text1{
+	opacity: 100%;
+}
+
+.Vistrel{
+	position: absolute;
+	top:2px;
+	left:156px;
+    opacity:0%;
+	border: none;
+}
+
+.Pulya{
+	position: absolute;
+	top:2px;
+	left:176px;
+    opacity:0%;
+	border: none;
+}
+
+.block-animation:active .text1{
+	opacity: 0;
+}
+
+.block-animation:active .text2{
+	opacity: 100%;
+}
+
+.block-animation:active .Vistrel{
+	opacity: 100%;
+	animation: Uborka 1s;
+}
+
+.block-animation:active .Pulya{
+	opacity: 100%;
+	animation: VistrelPulya 1s;
+}
+
+.block-animation:active .pistolet{
+	animation: Traska 1s;
+	opacity: 100%;
+}
+
+@keyframes VistrelPulya{
+	0%   {top: 2px; left: 176px; }
+	100% {top: 2px; left: 1200px;}
+}
+
+@keyframes Traska{
+	0% {transform: translateX(10px);}
+	50% {transform: translateX(-10px);}
+	100% {transform: translateX(10px);}
+}
+
+@keyframes Uborka{
+	0%  {opacity: 0;}
+	50% {opacity: 100%;}
+	100% {opacity: 0;}
+}
